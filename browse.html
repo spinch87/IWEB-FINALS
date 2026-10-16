@@ -1,0 +1,999 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Browse parts | AutoHub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="AutoHub home">
+          Auto<br />Hub
+          <small>HOLY ANGEL UNIVERSITY</small>
+        </a>
+
+        <div class="nav-links">
+          <a href="browse.html">Browse</a>
+          <a href="showcase.html">Builds</a>
+          <a href="hangouts.html">Hangouts</a>
+          <a href="index.html#how-it-works">How It Works</a>
+          <a href="index.html#about">About</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="btn btn-outline" href="orders.html"
+            >Cart / Orders (<span class="cart-count">0</span>)</a
+          >
+          <a class="btn btn-red login-button" href="login.html">Login</a>
+          <a class="btn btn-red" href="signup.html">Sign up</a>
+          <a class="btn btn-cyan" href="sell.html">Sell Part</a>
+        </div>
+      </nav>
+    </header>
+    <main class="inner-page container">
+      <div class="heading">
+        <span class="eyebrow">The AutoHub Marketplace</span>
+        <h1>Find Your Next <em>Upgrade</em></h1>
+        <p>Parts, gear and performance essentials for every Angel.</p>
+      </div>
+      <div class="market">
+        <aside class="panel filters">
+          <div class="row">
+            <h3>☷ Filters</h3>
+            <button id="clear" class="text-button">Clear all</button>
+          </div>
+          <h4>Category</h4>
+          <label class="check"
+            ><input
+              type="checkbox"
+              name="category"
+              value="Car Parts & Gear"
+            />Car Parts & Gear</label
+          ><label class="check"
+            ><input
+              type="checkbox"
+              name="category"
+              value="Motorcycle Components"
+            />Motorcycle Components</label
+          ><label class="check"
+            ><input
+              type="checkbox"
+              name="category"
+              value="Motorcycle Accessories"
+            />Motorcycle Accessories</label
+          >
+          <h4>Maximum price</h4>
+          <input
+            id="max-price"
+            type="number"
+            min="0"
+            placeholder="Any price"
+            aria-label="Maximum price"
+          />
+          <h4>Location</h4>
+          <p class="muted">HAU Main Campus / Fountain Area</p>
+        </aside>
+        <section class="results">
+          <div class="toolbar">
+            <input
+              id="search"
+              type="search"
+              placeholder="⌕  Search components, gear, builds…"
+              aria-label="Search parts"
+            /><label
+              >Sort by
+              <select id="sort">
+                <option value="default">Newest first</option>
+                <option value="low">Price: low to high</option>
+                <option value="high">Price: high to low</option>
+              </select></label
+            >
+          </div>
+          <div class="grid parts">
+            <article
+              class="product-card"
+              data-name="evo gt-pro helmet"
+              data-category="Motorcycle Accessories"
+              data-price="10600"
+            >
+              <div class="product-image-wrap">
+                <img src="gt Pro Helmet.jpg" alt="EVO GT-PRO Helmet" /><span
+                  class="tag red"
+                  >HOT DEAL</span
+                >
+              </div>
+              <div class="product-info">
+                <h3>EVO GT-PRO Helmet</h3>
+                <p>Motorcycle Accessories</p>
+                <p class="muted">Angeles City · Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱10,600</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save EVO GT-PRO Helmet"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="EVO GT-PRO Helmet"
+                data-cart-price="10600"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-name="yss g-series suspension"
+              data-category="Motorcycle Components"
+              data-price="2900"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="yss.jpg  "
+                  alt="YSS G-Series Suspension"
+                /><span class="tag">FEATURED</span>
+              </div>
+              <div class="product-info">
+                <h3>YSS G-Series Suspension</h3>
+                <p>Motorcycle Components</p>
+                <p class="muted">Angeles City · Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱2,900</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save YSS G-Series Suspension"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="YSS G-Series Suspension"
+                data-cart-price="2900"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-name="rcb sp522 alloy rims"
+              data-category="Motorcycle Components"
+              data-price="2500"
+            >
+              <div class="product-image-wrap">
+                <img src="alloy rims.jpg" alt="RCB SP522 Alloy Rims" /><span
+                  class="tag red"
+                  >HOT DEAL</span
+                >
+              </div>
+              <div class="product-info">
+                <h3>RCB SP522 Alloy Rims</h3>
+                <p>Motorcycle Components</p>
+                <p class="muted">Angeles City · Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱2,500</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save RCB SP522 Alloy Rims"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="RCB SP522 Alloy Rims"
+                data-cart-price="2500"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-name="halo ring led headlight"
+              data-category="Car Parts & Gear"
+              data-price="2600"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="led lights.webp"
+                  alt="Halo Ring LED Headlight"
+                /><span class="tag">FEATURED</span>
+              </div>
+              <div class="product-info">
+                <h3>Halo Ring LED Headlight</h3>
+                <p>Car Parts & Gear</p>
+                <p class="muted">Angeles City · Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱2,600</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save Halo Ring LED Headlight"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="Halo Ring LED Headlight"
+                data-cart-price="2600"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-name="rusi hot exhaust pipe"
+              data-category="Motorcycle Components"
+              data-price="4500"
+            >
+              <div class="product-image-wrap">
+                <img src="rusi pipe.jpg" alt="RUSI HOT Exhaust Pipe" /><span
+                  class="tag red"
+                  >HOT DEAL</span
+                >
+              </div>
+              <div class="product-info">
+                <h3>RUSI HOT Exhaust Pipe</h3>
+                <p>Motorcycle Components</p>
+                <p class="muted">Angeles City · Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱4,500</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save RUSI HOT Exhaust Pipe"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="RUSI HOT Exhaust Pipe"
+                data-cart-price="4500"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-name="mtb cnc brake calipers"
+              data-category="Motorcycle Components"
+              data-price="2300"
+            >
+              <div class="product-image-wrap">
+                <img src="cnc brake calipers.jpg" alt="MTB CNC Brake Calipers" /><span
+                  class="tag"
+                  >FEATURED</span
+                >
+              </div>
+              <div class="product-info">
+                <h3>MTB CNC Brake Calipers</h3>
+                <p>Motorcycle Components</p>
+                <p class="muted">Angeles City · Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱2,300</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save MTB CNC Brake Calipers"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="MTB CNC Brake Calipers"
+                data-cart-price="2300"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Car Parts & Gear"
+              data-name="momo shifter"
+              data-price="45000"
+              data-search="momo shifter angeles city"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="shifter.jpg"
+                  alt="MOMO Shifter"
+                  loading="lazy"
+                />
+                <span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>MOMO Shifter</h3>
+                <p class="location">⌖ Angeles City</p>
+                <div class="price-row">
+                  <span class="price">₱3,700</span>
+                  <button class="bookmark" aria-label="Save MOMO Shifter listing">
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="MOMO Shifter"
+                data-cart-price="3700"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Wheels"
+              data-name="vmf wheels"
+              data-price="7000"
+              data-search="vmf wheels angeles city"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="vmf wheels.jpg"
+                  alt="Black car wheel"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-info">
+                <h3>VMF Wheels</h3>
+                <p class="location">⌖ Angeles City</p>
+                <div class="price-row">
+                  <span class="price">₱7,000</span>
+                  <button class="bookmark" aria-label="Save VMF Wheels listing">
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="VMF Wheels"
+                data-cart-price="7000"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Car Parts & Gear"
+              data-name="sparco steering wheel"
+              data-price="5000"
+              data-search="sparco steering wheel hau engineering building"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="sparco steering wheels.jpg"
+                  alt="Driver holding a racing steering wheel"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Sparco Steering Wheel</h3>
+                <p class="location">⌖ HAU Engineering Bldg.</p>
+                <div class="price-row">
+                  <span class="price">₱5,000</span>
+                  <button
+                    class="bookmark"
+                    aria-label="Save Sparco steering wheel listing"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="Sparco Steering Wheel"
+                data-cart-price="5000"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Components"
+              data-name="spark plug bosch"
+              data-price="570"
+              data-search="spark plug bosch mexico pampanga"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="spark plug.jpg"
+                  alt="Spark Plug BOSCH"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Spark Plug BOSCH</h3>
+                <p class="location">⌖ Mexico, Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱570</span>
+                  <button class="bookmark" aria-label="Save Spark Plug BOSCH listing">
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="Spark Plug BOSCH"
+                data-cart-price="570"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Helmets"
+              data-search="evo gt-pro helmet — matte black dau, mabalacat moto accessories"
+              data-name="evo gt-pro helmet — matte black"
+              data-price="5900"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="matte black evo gt pro.jpg"
+                  alt="Illustrative photo for EVO GT-PRO Helmet — Matte Black"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>EVO GT-PRO Helmet — Matte Black</h3>
+                <p>Motorcycle Accessories</p>
+                <p class="location">⌖ Dau, Mabalacat</p>
+                <div class="price-row">
+                  <span class="price">₱5,900</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save EVO GT-PRO Helmet — Matte Black listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="EVO GT-PRO Helmet — Matte Black"
+                data-cart-price="5900"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Components"
+              data-search="yss rear shock set — 320 mm angeles city moto performance"
+              data-name="yss rear shock set — 320 mm"
+              data-price="4200"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="yss rear shock.jpg"
+                  alt="Illustrative photo for YSS Rear Shock Set — 320 mm"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>YSS Rear Shock Set — 320 mm</h3>
+                <p>Motorcycle Components</p>
+                <p class="location">⌖ Angeles City</p>
+                <div class="price-row">
+                  <span class="price">₱4,200</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save YSS Rear Shock Set — 320 mm listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="YSS Rear Shock Set — 320 mm"
+                data-cart-price="4200"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Components"
+              data-search="rcb alloy wheel set — gold san fernando, pampanga moto performance"
+              data-name="rcb alloy wheel set — gold"
+              data-price="6800"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="gold rims.jpg"
+                  alt="Illustrative photo for RCB Alloy Wheel Set — Gold"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>RCB Alloy Wheel Set — Gold</h3>
+                <p>Motorcycle Components</p>
+                <p class="location">⌖ San Fernando, Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱6,800</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save RCB Alloy Wheel Set — Gold listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="RCB Alloy Wheel Set — Gold"
+                data-cart-price="6800"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Car Parts & Gear"
+              data-search="universal halo led headlight pair hau main campus car accessories"
+              data-name="universal halo led headlight pair"
+              data-price="2200"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="universal halo lights.jpg"
+                  alt="Illustrative photo for Universal Halo LED Headlight Pair"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>Universal Halo LED Headlight Pair</h3>
+                <p>Car Parts & Gear</p>
+                <p class="location">⌖ HAU Main Campus</p>
+                <div class="price-row">
+                  <span class="price">₱2,200</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save Universal Halo LED Headlight Pair listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="Universal Halo LED Headlight Pair"
+                data-cart-price="2200"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Components"
+              data-search="stainless motorcycle exhaust system mexico, pampanga moto performance"
+              data-name="stainless motorcycle exhaust system"
+              data-price="3500"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="stainless exhaust.jpg"
+                  alt="Illustrative photo for Stainless Motorcycle Exhaust System"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>Stainless Motorcycle Exhaust System</h3>
+                <p>Motorcycle Components</p>
+                <p class="location">⌖ Mexico, Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱3,500</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save Stainless Motorcycle Exhaust System listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="Stainless Motorcycle Exhaust System"
+                data-cart-price="3,500"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Components"
+              data-search="cnc front brake caliper — red angeles city moto performance"
+              data-name="cnc front brake caliper — red"
+              data-price="2800"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="cnc front calipers.jpg"
+                  alt="Illustrative photo for CNC Front Brake Caliper — Red"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>CNC Front Brake Caliper — Red</h3>
+                <p>Motorcycle Components</p>
+                <p class="location">⌖ Angeles City</p>
+                <div class="price-row">
+                  <span class="price">₱2,800</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save CNC Front Brake Caliper — Red listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="CNC Front Brake Caliper — Red"
+                data-cart-price="2800"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Helmets"
+              data-search="evo full-face helmet — medium porac, pampanga moto accessories"
+              data-name="evo full-face helmet — medium"
+              data-price="6500"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="evo full face helmet.jpg"
+                  alt="Illustrative photo for EVO Full-Face Helmet — Medium"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>EVO Full-Face Helmet — Medium</h3>
+                <p>Motorcycle Helmets</p>
+                <p class="location">⌖ Porac, Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱6,500</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save EVO Full-Face Helmet — Medium listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="EVO Full-Face Helmet — Medium"
+                data-cart-price="6500"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Components"
+              data-search="adjustable rear suspension pair dau, mabalacat moto performance"
+              data-name="adjustable rear suspension pair"
+              data-price="2000"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="rear suspension adjustable.jpg"
+                  alt="Illustrative photo for Adjustable Rear Suspension Pair"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>Adjustable Rear Suspension Pair</h3>
+                <p>Motorcycle Components</p>
+                <p class="location">⌖ Dau, Mabalacat</p>
+                <div class="price-row">
+                  <span class="price">₱2,000</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save Adjustable Rear Suspension Pair listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="Adjustable Rear Suspension Pair"
+                data-cart-price="2000"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Components"
+              data-search="rcb replacement front alloy rim hau main campus moto"
+              data-name="rcb replacement front alloy rim"
+              data-price="3100"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="gold fron allloy rims.jpg"
+                  alt="Illustrative photo for RCB Replacement Front Alloy Rim"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>RCB Replacement Front Alloy Rim</h3>
+                <p>Motorcycle Components</p>
+                <p class="location">⌖ HAU Main Campus</p>
+                <div class="price-row">
+                  <span class="price">₱3,100</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save RCB Replacement Front Alloy Rim listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="RCB Replacement Front Alloy Rim"
+                data-cart-price="3100"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Car Parts & Gear"
+              data-search="round led projector headlight clark, pampanga car accessories"
+              data-name="round led projector headlight"
+              data-price="1850"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="circular projector lights.jpg"
+                  alt="Illustrative photo for Round LED Projector Headlight"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>Round LED Projector Headlight</h3>
+                <p>Car Parts & Gear</p>
+                <p class="location">⌖ Clark, Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱1,850</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save Round LED Projector Headlight listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="Round LED Projector Headlight"
+                data-cart-price="1850"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Components"
+              data-search="universal clip-on exhaust san fernando, pampanga moto performance"
+              data-name="universal clip-on exhaust"
+              data-price="600"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="clip exhaust.jpg"
+                  alt="Illustrative photo for Universal Clip-On Exhaust"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>Universal Clip-On Exhaust</h3>
+                <p>Motorcycle Components</p>
+                <p class="location">⌖ San Fernando, Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱600</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save Universal Clip-On Exhaust listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="Universal Clip-On Exhaust"
+                data-cart-price="600"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Helmets"
+              data-search="o'neal ex-srs motorcycle mx helmet mexico, pampanga moto performance"
+              data-name="o'neal ex-srs motorcycle mx helmet"
+              data-price="2400"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="oneal helmet full face large.jpg"
+                  alt="Illustrative photo for O'NEAL EX-SRS Motorcycle MX Helmet"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>O'NEAL EX-SRS Motorcycle MX Helmet</h3>
+                <p>Motorcycle Helmets</p>
+                <p class="location">⌖ Mexico, Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱4,800</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save O'NEAL EX-SRS Motorcycle MX Helmet listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="O'NEAL EX-SRS Motorcycle MX Helmet"
+                data-cart-price="4800"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Motorcycle Helmets"
+              data-search="SAGA DSEC-05925 helmet angeles city moto accessories"
+              data-name="SAGA DSEC-05925 helmet"
+              data-price="2300"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="sec helmets.jpg"
+                  alt="Illustrative photo for SAGA DSEC-05925 Helmet"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>SAGA DSEC-05925 HELMET — Large</h3>
+                <p>Motorcycle Helmets</p>
+                <p class="location">⌖ Angeles City</p>
+                <div class="price-row">
+                  <span class="price">₱2,300</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save SAGA DSEC-05925 Helmet listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="SAGA DSEC-05925 Helmet"
+                data-cart-price="2300"
+              >
+                Add to Cart
+              </button>
+            </article>
+            <article
+              class="product-card"
+              data-category="Car Parts & Gear"
+              data-search="nacho grande sae j581 high beam clark, pampanga car performance accessories"
+              data-name="nacho grande sae j581 high beam"
+              data-price="2500"
+            >
+              <div class="product-image-wrap">
+                <img
+                  src="nacho-grande-sae-j581-high-beam.jpg"
+                  alt="Illustrative photo for Nacho Grande Sae J581 High Beam"
+                  loading="lazy"
+                /><span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>Nacho Grande Sae J581 High Beam</h3>
+                <p>Car Parts & Gear</p>
+                <p class="location">⌖ Clark, Pampanga</p>
+                <div class="price-row">
+                  <span class="price">₱2,500</span
+                  ><button
+                    class="bookmark"
+                    aria-label="Save Nacho Grande Sae J581 High Beam listing"
+                    aria-pressed="false"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+              <button
+                class="btn btn-cyan cart-button"
+                data-cart-name="Nacho Grande Sae J581 High Beam"
+                data-cart-price="2500"
+              >
+                Add to Cart
+              </button>
+            </article>
+          </div>
+          <p id="empty" hidden>No matching parts found.</p>
+          <div class="pagination">
+            <span class="page active">1</span
+            ><span class="muted">24 sample listings</span>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="about">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h2>AutoHub</h2>
+            <p>
+              The dedicated automotive marketplace for Holy Angel University
+              students. Buy, sell, and connect with fellow enthusiasts.
+            </p>
+            <p class="slogan">“Laus Deo Semper”</p>
+          </div>
+          <div class="footer-links">
+            <h3>Marketplace</h3>
+            <a href="browse.html?category=car">Car Parts</a>
+            <a href="browse.html?category=moto">Motorcycle Parts</a>
+            <a href="browse.html?category=accessories">Accessories</a>
+            <a href="sell.html">Sell an Item</a>
+          </div>
+          <div class="footer-links">
+            <h3>Community</h3>
+            <a href="index.html#community">Guidelines</a>
+            <a href="hangouts.html">Events Calendar</a>
+            <a href="#">Safety Tips</a>
+            <a href="#">Contact Support</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <span>© 2026 AutoHub. All rights reserved.</span>
+          <span>Privacy Policy &nbsp; Terms of Service</span>
+        </div>
+      </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

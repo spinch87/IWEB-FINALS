@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cart and Orders | AutoHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="AutoHub home">
+        Auto<br>Hub
+        <small>HOLY ANGEL UNIVERSITY</small>
+      </a>
+
+      <div class="nav-links">
+        <a href="browse.html">Browse</a>
+        <a href="showcase.html">Builds</a>
+        <a href="hangouts.html">Hangouts</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#about">About</a>
+      </div>
+
+      <div class="nav-actions">
+<a class="btn btn-outline" href="orders.html">Cart / Orders (<span class="cart-count">0</span>)</a>
+        <a class="btn btn-red login-button" href="login.html">Login</a>
+        <a class="btn btn-red" href="signup.html">Sign up</a>
+        <a class="btn btn-cyan" href="sell.html">Sell Part</a>
+      </div>
+    </nav>
+  </header>
+<main class="container shopping-section">
+  <div class="section-heading"><h1>Cart &amp; Orders</h1><a class="view-all" href="browse.html">Continue Shopping →</a></div>
+  <section class="shopping-box" id="cart">
+    <h2>My Cart</h2>
+    <div id="cartItems"><p>Your cart is empty.</p></div>
+    <p id="cartTotal">Total: ₱0</p>
+    <label for="payment">Payment Method</label>
+    <select class="payment-select" id="payment">
+      <option value="Meet-up">Face-to-face Meet-up (Recommended)</option>
+      <option value="COD">Cash on Delivery</option>
+      <option value="Online Payment">Online Payment</option>
+      <option value="Card">Credit / Debit Card</option>
+    </select>
+    <button class="btn btn-cyan" onclick="placeOrder()">Place Order</button>
+  </section>
+  <section class="shopping-box" id="orders">
+    <h2>My Orders</h2>
+    <div class="order-tabs">
+      <button class="btn btn-cyan" data-order-status="To Pay" onclick="showOrders('To Pay')">To Pay</button>
+      <button class="btn btn-outline" data-order-status="To Ship / Meet-up" onclick="showOrders('To Ship / Meet-up')">To Ship / Meet-up</button>
+      <button class="btn btn-outline" data-order-status="Completed" onclick="showOrders('Completed')">Completed</button>
+      <button class="btn btn-outline" data-order-status="Cancelled" onclick="showOrders('Cancelled')">Cancelled</button>
+    </div>
+    <div id="orderList"><p>No orders here yet.</p></div>
+  </section>
+</main>
+<footer id="about">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h2>AutoHub</h2>
+          <p>The dedicated automotive marketplace for Holy Angel University students. Buy, sell, and connect with fellow enthusiasts.</p>
+          <p class="slogan">“Laus Deo Semper”</p>
+        </div>
+        <div class="footer-links">
+          <h3>Marketplace</h3>
+          <a href="browse.html?category=car">Car Parts</a>
+          <a href="browse.html?category=moto">Motorcycle Parts</a>
+          <a href="browse.html?category=accessories">Accessories</a>
+          <a href="sell.html">Sell an Item</a>
+        </div>
+        <div class="footer-links">
+          <h3>Community</h3>
+          <a href="index.html#community">Guidelines</a>
+          <a href="hangouts.html">Events Calendar</a>
+          <a href="#">Safety Tips</a>
+          <a href="#">Contact Support</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2026 AutoHub. All rights reserved.</span>
+        <span>Privacy Policy &nbsp; Terms of Service</span>
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

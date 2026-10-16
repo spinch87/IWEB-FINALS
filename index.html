@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AutoHub — the automotive marketplace for Holy Angel University students.">
+  <title>AutoHub | Holy Angel University</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="AutoHub home">
+        Auto<br>Hub
+        <small>HOLY ANGEL UNIVERSITY</small>
+      </a>
+
+      <div class="nav-links">
+        <a href="browse.html">Browse</a>
+        <a href="showcase.html">Builds</a>
+        <a href="hangouts.html">Hangouts</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+      </div>
+
+      <div class="nav-actions">
+<a class="btn btn-outline" href="orders.html">Cart / Orders (<span class="cart-count">0</span>)</a>
+        <a class="btn btn-red login-button" href="login.html">Login</a>
+        <a class="btn btn-red" href="signup.html">Sign up</a>
+        <a class="btn btn-cyan" href="sell.html">Sell Part</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>For Every Angel<br>Behind The Wheel</h1>
+        <p>The exclusive automotive marketplace for HAU students. Find affordable parts, trade gear, and connect with local drivers.</p>
+
+        <form class="search-box" id="searchForm" role="search">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search for wheels, rims, helmets..." aria-label="Search products">
+          <button class="btn btn-cyan" type="submit">Search</button>
+        </form>
+
+        <div class="hero-actions">
+          <a class="btn btn-outline" href="browse.html">Browse Marketplace</a>
+          <a class="btn btn-red" href="#community">Join the Community</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container" aria-label="Product categories">
+      <button class="category-card" data-category="car">
+        <span class="category-icon" aria-hidden="true">🚘</span>
+        <span>Car Parts</span>
+      </button>
+      <button class="category-card" data-category="moto">
+        <span class="category-icon" aria-hidden="true">🏍</span>
+        <span>Moto Parts</span>
+      </button>
+      <button class="category-card" data-category="accessories">
+        <span class="category-icon" aria-hidden="true">⚙</span>
+        <span>Accessories</span>
+      </button>
+      <button class="category-card" data-category="performance">
+        <span class="category-icon" aria-hidden="true">⚡</span>
+        <span>Performance</span>
+      </button>
+    </section>
+
+    <section class="products-section container" id="products">
+      <div class="section-heading">
+        <h2>Fresh on the Block</h2>
+        <a class="view-all" href="browse.html">View All →</a>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="car performance" data-search="enkei rpf1 rims wheels angeles city">
+          <div class="product-image-wrap">
+            <img src="https://images.unsplash.com/photo-1597404294360-feeeda04612e?auto=format&fit=crop&w=700&q=85" alt="Silver Enkei-style alloy wheel" loading="lazy">
+            <span class="tag">New</span>
+          </div>
+          <div class="product-info">
+            <h3>Enkei RPF1 18x9.5</h3>
+            <p class="location">⌖ Angeles City</p>
+            <div class="price-row">
+              <span class="price">₱45,000</span>
+              <button class="bookmark" aria-label="Save Enkei RPF1 listing">♡</button>
+            </div>
+          </div>
+        <button class="btn btn-cyan cart-button" data-cart-name="Enkei RPF1 18x9.5" data-cart-price="45000">Add to Cart</button></article>
+
+        <article class="product-card" data-category="moto performance" data-search="akrapovic slip on exhaust motorcycle angeles city">
+          <div class="product-image-wrap">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=700&q=85" alt="Black motorcycle exhaust and rear wheel" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Akrapovič Slip-On (R15)</h3>
+            <p class="location">⌖ Angeles City</p>
+            <div class="price-row">
+              <span class="price">₱12,500</span>
+              <button class="bookmark" aria-label="Save Akrapovic listing">♡</button>
+            </div>
+          </div>
+        <button class="btn btn-cyan cart-button" data-cart-name="Akrapovič Slip-On (R15)" data-cart-price="12500">Add to Cart</button></article>
+
+        <article class="product-card" data-category="accessories" data-search="sparco steering wheel hau engineering building">
+          <div class="product-image-wrap">
+            <img src="https://images.unsplash.com/photo-1590845947376-2638caa89309?auto=format&fit=crop&w=700&q=85" alt="Driver holding a racing steering wheel" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Sparco Steering Wheel</h3>
+            <p class="location">⌖ HAU Engineering Bldg.</p>
+            <div class="price-row">
+              <span class="price">₱5,000</span>
+              <button class="bookmark" aria-label="Save Sparco steering wheel listing">♡</button>
+            </div>
+          </div>
+        <button class="btn btn-cyan cart-button" data-cart-name="Sparco Steering Wheel" data-cart-price="5000">Add to Cart</button></article>
+
+        <article class="product-card" data-category="moto accessories" data-search="agv k3 sv matte black helmet mexico pampanga">
+          <div class="product-image-wrap">
+            <img src="https://images.unsplash.com/photo-1575024357670-2b5164f470c3?auto=format&fit=crop&w=700&q=85" alt="Matte black motorcycle helmet" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>AGV K3 SV Matte Black</h3>
+            <p class="location">⌖ Mexico, Pampanga</p>
+            <div class="price-row">
+              <span class="price">₱9,800</span>
+              <button class="bookmark" aria-label="Save AGV helmet listing">♡</button>
+            </div>
+          </div>
+        <button class="btn btn-cyan cart-button" data-cart-name="AGV K3 SV Matte Black" data-cart-price="9800">Add to Cart</button></article>
+<article class="product-card" data-category="moto accessories" data-search="evo gt-pro helmet — gloss black dau, mabalacat moto accessories" data-name="evo gt-pro helmet — gloss black" data-price="8900">
+ <div class="product-image-wrap"><img src="assets/part0.png" alt="Illustrative photo for EVO GT-PRO Helmet — Gloss Black" loading="lazy"><span class="tag">New</span></div>
+ <div class="product-info"><h3>EVO GT-PRO Helmet — Gloss Black</h3><p class="location">⌖ Dau, Mabalacat</p>
+ <div class="price-row"><span class="price">₱8,900</span><button class="bookmark" aria-label="Save EVO GT-PRO Helmet — Gloss Black listing" aria-pressed="false">♡</button></div></div><button class="btn btn-cyan cart-button" data-cart-name="EVO GT-PRO Helmet — Gloss Black" data-cart-price="8900">Add to Cart</button></article>
+<article class="product-card" data-category="moto performance" data-search="yss rear shock set — 320 mm angeles city moto performance" data-name="yss rear shock set — 320 mm" data-price="4200">
+ <div class="product-image-wrap"><img src="assets/part1.png" alt="Illustrative photo for YSS Rear Shock Set — 320 mm" loading="lazy"><span class="tag">New</span></div>
+ <div class="product-info"><h3>YSS Rear Shock Set — 320 mm</h3><p class="location">⌖ Angeles City</p>
+ <div class="price-row"><span class="price">₱4,200</span><button class="bookmark" aria-label="Save YSS Rear Shock Set — 320 mm listing" aria-pressed="false">♡</button></div></div><button class="btn btn-cyan cart-button" data-cart-name="YSS Rear Shock Set — 320 mm" data-cart-price="4200">Add to Cart</button></article>
+<article class="product-card" data-category="moto performance" data-search="rcb alloy wheel set — gold san fernando, pampanga moto performance" data-name="rcb alloy wheel set — gold" data-price="6800">
+ <div class="product-image-wrap"><img src="assets/part2.png" alt="Illustrative photo for RCB Alloy Wheel Set — Gold" loading="lazy"><span class="tag">New</span></div>
+ <div class="product-info"><h3>RCB Alloy Wheel Set — Gold</h3><p class="location">⌖ San Fernando, Pampanga</p>
+ <div class="price-row"><span class="price">₱6,800</span><button class="bookmark" aria-label="Save RCB Alloy Wheel Set — Gold listing" aria-pressed="false">♡</button></div></div><button class="btn btn-cyan cart-button" data-cart-name="RCB Alloy Wheel Set — Gold" data-cart-price="6800">Add to Cart</button></article>
+<article class="product-card" data-category="car accessories" data-search="universal halo led headlight pair hau main campus car accessories" data-name="universal halo led headlight pair" data-price="3200">
+ <div class="product-image-wrap"><img src="assets/part3.png" alt="Illustrative photo for Universal Halo LED Headlight Pair" loading="lazy"><span class="tag">New</span></div>
+ <div class="product-info"><h3>Universal Halo LED Headlight Pair</h3><p class="location">⌖ HAU Main Campus</p>
+ <div class="price-row"><span class="price">₱3,200</span><button class="bookmark" aria-label="Save Universal Halo LED Headlight Pair listing" aria-pressed="false">♡</button></div></div><button class="btn btn-cyan cart-button" data-cart-name="Universal Halo LED Headlight Pair" data-cart-price="3200">Add to Cart</button></article>
+<article class="product-card" data-category="moto performance" data-search="stainless motorcycle exhaust system mexico, pampanga moto performance" data-name="stainless motorcycle exhaust system" data-price="5500">
+ <div class="product-image-wrap"><img src="assets/part4.png" alt="Illustrative photo for Stainless Motorcycle Exhaust System" loading="lazy"><span class="tag">New</span></div>
+ <div class="product-info"><h3>Stainless Motorcycle Exhaust System</h3><p class="location">⌖ Mexico, Pampanga</p>
+ <div class="price-row"><span class="price">₱5,500</span><button class="bookmark" aria-label="Save Stainless Motorcycle Exhaust System listing" aria-pressed="false">♡</button></div></div><button class="btn btn-cyan cart-button" data-cart-name="Stainless Motorcycle Exhaust System" data-cart-price="5500">Add to Cart</button></article>
+<article class="product-card" data-category="moto performance" data-search="cnc front brake caliper — red angeles city moto performance" data-name="cnc front brake caliper — red" data-price="2800">
+ <div class="product-image-wrap"><img src="assets/part5.png" alt="Illustrative photo for CNC Front Brake Caliper — Red" loading="lazy"><span class="tag">New</span></div>
+ <div class="product-info"><h3>CNC Front Brake Caliper — Red</h3><p class="location">⌖ Angeles City</p>
+ <div class="price-row"><span class="price">₱2,800</span><button class="bookmark" aria-label="Save CNC Front Brake Caliper — Red listing" aria-pressed="false">♡</button></div></div><button class="btn btn-cyan cart-button" data-cart-name="CNC Front Brake Caliper — Red" data-cart-price="2800">Add to Cart</button></article>
+<article class="product-card" data-category="moto accessories" data-search="evo full-face helmet — medium porac, pampanga moto accessories" data-name="evo full-face helmet — medium" data-price="6500">
+ <div class="product-image-wrap"><img src="assets/part0.png" alt="Illustrative photo for EVO Full-Face Helmet — Medium" loading="lazy"><span class="tag">New</span></div>
+ <div class="product-info"><h3>EVO Full-Face Helmet — Medium</h3><p class="location">⌖ Porac, Pampanga</p>
+ <div class="price-row"><span class="price">₱6,500</span><button class="bookmark" aria-label="Save EVO Full-Face Helmet — Medium listing" aria-pressed="false">♡</button></div></div><button class="btn btn-cyan cart-button" data-cart-name="EVO Full-Face Helmet — Medium" data-cart-price="6500">Add to Cart</button></article>
+<article class="product-card" data-category="moto performance" data-search="adjustable rear suspension pair dau, mabalacat moto performance" data-name="adjustable rear suspension pair" data-price="7200">
+ <div class="product-image-wrap"><img src="assets/part1.png" alt="Illustrative photo for Adjustable Rear Suspension Pair" loading="lazy"><span class="tag">New</span></div>
+ <div class="product-info"><h3>Adjustable Rear Suspension Pair</h3><p class="location">⌖ Dau, Mabalacat</p>
+ <div class="price-row"><span class="price">₱7,200</span><button class="bookmark" aria-label="Save Adjustable Rear Suspension Pair listing" aria-pressed="false">♡</button></div></div><button class="btn btn-cyan cart-button" data-cart-name="Adjustable Rear Suspension Pair" data-cart-price="7200">Add to Cart</button></article>
+      </div>
+
+      <p class="empty-state" id="emptyState">No parts match your search yet. Try another keyword or category.</p>
+    </section>
+
+    <section class="community-section container" id="community">
+      <article class="build-card">
+        <div class="build-content">
+          <span class="eyebrow">Community Spotlight</span>
+          <h2>Show Your Build</h2>
+          <p>Share your project car or bike with the HAU community. Get featured on the homepage and connect with other builders.</p>
+          <a class="btn" href="showcase.html">View &amp; Submit Builds</a>
+        </div>
+      </article>
+
+      <aside class="hangouts">
+        <h2><span aria-hidden="true">▣</span> AutoHub Hangouts</h2><p class="hangout-preview-note">Sample community plans · <a href="hangouts.html">View all hangouts →</a></p>
+        <a class="event" href="hangouts.html#nepo">
+          <time class="event-date" datetime="2026-10-24">24<small>OCT</small></time>
+          <div>
+            <h3>Night Ride &amp; Coffee</h3>
+            <p>Nepo Quad • 6:00 PM</p>
+          </div>
+          <span class="event-arrow">→</span>
+        </a>
+        <a class="event" href="hangouts.html#marquee">
+          <time class="event-date" datetime="2026-11-02">02<small>NOV</small></time>
+          <div>
+            <h3>HAU Car Show Prep</h3>
+            <p>MarQuee Mall • 1:00 PM</p>
+          </div>
+          <span class="event-arrow">→</span>
+        </a>
+      </aside>
+    </section>
+
+    <section class="container how-section" id="how-it-works"><h2>How AutoHub Works</h2><div class="how-grid"><article><span class="eyebrow">01 · Browse</span><h3>Find your next upgrade</h3><p>Search the marketplace and filter parts for your car or motorcycle.</p></article><article><span class="eyebrow">02 · List</span><h3>Give your gear a new home</h3><p>Add photos, condition, fitment and a price on the Sell Part page.</p></article><article><span class="eyebrow">03 · Connect</span><h3>Share your passion</h3><p>Explore community builds and meet safely in a public place.</p></article></div></section>
+  </main>
+
+  <footer id="about">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h2>AutoHub</h2>
+          <p>The dedicated automotive marketplace for Holy Angel University students. Buy, sell, and connect with fellow enthusiasts.</p>
+          <p class="slogan">“Laus Deo Semper”</p>
+        </div>
+        <div class="footer-links">
+          <h3>Marketplace</h3>
+          <a href="browse.html?category=car">Car Parts</a>
+          <a href="browse.html?category=moto">Motorcycle Parts</a>
+          <a href="browse.html?category=accessories">Accessories</a>
+          <a href="sell.html">Sell an Item</a>
+        </div>
+        <div class="footer-links">
+          <h3>Community</h3>
+          <a href="#community">Guidelines</a>
+          <a href="hangouts.html">Events Calendar</a>
+          <a href="#">Safety Tips</a>
+          <a href="#">Contact Support</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2026 AutoHub. All rights reserved.</span>
+        <span>Privacy Policy &nbsp; Terms of Service</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="actionModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="close-modal" id="closeModal" aria-label="Close dialog">×</button>
+      <h2 id="modalTitle">Join AutoHub</h2>
+      <p id="modalText">Create your student marketplace account.</p>
+      <form id="demoForm">
+        <div class="form-field">
+          <label for="email">HAU email address</label>
+          <input id="email" type="email" placeholder="student@hau.edu.ph" required>
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter your password" required>
+        </div>
+        <button class="btn btn-cyan" type="submit">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
